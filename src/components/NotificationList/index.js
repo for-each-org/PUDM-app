@@ -1,5 +1,5 @@
 import React from "react";
-import { View, ScrollView, StyleSheet } from "react-native";
+import { ScrollView, StyleSheet } from "react-native";
 
 import NotificationRow from "./NotificationRow";
 import { notificationData } from "../../sampleData";
