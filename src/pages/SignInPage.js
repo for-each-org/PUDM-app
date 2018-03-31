@@ -12,9 +12,8 @@ const styleSheet = StyleSheet.create({
 
 const SignInPage = () => (
   <View style={styleSheet.container}>
-    <Text>Implement Sign-In Page</Text>
+    <Text>Implement sign-in page</Text>
   </View>
 );
-
 
 export default SignInPage;

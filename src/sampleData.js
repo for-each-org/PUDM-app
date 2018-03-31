@@ -1,6 +1,17 @@
 /***** EVERYTHING HERE IS TEMPORARY. WILL BE REMOVED WHEN ENDPOINTS ARE LIVE *****/
 import moment from "moment";
 
+/* Mock date for team colors */
+export const teamColors = [
+  "blue",
+  "yellow",
+  "red",
+  "orange",
+  "green",
+  "pink",
+  "purple",
+];
+
 /* Object that maps group ids to their color as a string */
 export const groupMapping = {
   [0] : "Blue",

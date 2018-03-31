@@ -2,6 +2,7 @@ import React from "react";
 import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
 import { StackNavigator } from "react-navigation";
 
+import HomePage from "./src/pages/HomePage";
 import SignInPage from "./src/pages/SignInPage";
 import NotificationsPage from "./src/pages/NotificationsPage";
 import CheckInPage from "./src/pages/CheckInPage";
@@ -46,9 +47,9 @@ const TempMenu = ({ navigation }) => (
       Temporary Main Menu
     </Text>
     <MenuItem
-      pageName={"Sign In Page"}
+      pageName={"Home Page"}
       color={"#dd2ebd"}
-      goTo={() => navigation.navigate('SignIn')}
+      goTo={() => navigation.navigate('Home')}
     />
     <MenuItem
       pageName={"Notifications"}
@@ -67,6 +68,9 @@ const RootStack = StackNavigator(
   {
     Menu: {
       screen: TempMenu
+    },
+    Home: {
+      screen: HomePage
     },
     SignIn: {
       screen: SignInPage
