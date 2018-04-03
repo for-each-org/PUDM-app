@@ -19,5 +19,5 @@ const check_in_list_reducer = (state = userData, action) => state
 export default combineReducers({
   group: group_reducer,
   notifications: notifications_reducer,
-  checkInList: check_in_list_reducer
+  users: check_in_list_reducer
 });

@@ -1,8 +1,7 @@
 import React from "react";
 import { ScrollView, StyleSheet } from "react-native";
-
+import { connect } from "react-redux";
 import NotificationRow from "./NotificationRow";
-import { notificationData } from "../../sampleData";
 
 const styleSheet = StyleSheet.create({
   listWrapper: {
@@ -11,10 +10,14 @@ const styleSheet = StyleSheet.create({
   }
 });
 
-const NotificationList = ({ styles }) => (
+const NotificationList = ({ styles, notifications }) => (
   <ScrollView style={[styleSheet.listWrapper, styles]}>
-    {notificationData.map((props, index) => <NotificationRow {...props} key={index} />)}
+    {notifications.map((props, index) => <NotificationRow {...props} key={index} />)}
   </ScrollView>
 );
 
-export default NotificationList;
+const mapStateToProps = state => ({
+    notifications: state.notifications
+})
+
+export default connect(mapStateToProps)(NotificationList);
