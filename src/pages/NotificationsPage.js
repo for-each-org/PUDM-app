@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 
-import NotificationList from "../components/NotificationList";
+import NotificationList from "src/components/NotificationList";
 
 const styleSheet = StyleSheet.create({
   container: {

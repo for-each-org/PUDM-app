@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, ScrollView, StyleSheet } from "react-native";
 import { connect } from "react-redux";
 
-import CheckInUserRow from './CheckInUserRow';
+import CheckInUserRow from "src/components/CheckInList/CheckInUserRow";
 
 const styleSheet = StyleSheet.create({
   listWrapper: {

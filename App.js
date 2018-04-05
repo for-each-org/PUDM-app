@@ -1,15 +1,15 @@
 import React from "react";
 import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
-import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { Provider } from "react-redux";
+import { createStore } from "redux";
 import { StackNavigator } from "react-navigation";
 
-import reducers from "./src/redux/reducers";
+import reducers from "src/redux/reducers";
 
-import HomePage from "./src/pages/HomePage";
-import SignInPage from "./src/pages/SignInPage";
-import NotificationsPage from "./src/pages/NotificationsPage";
-import CheckInPage from "./src/pages/CheckInPage";
+import HomePage from "src/pages/HomePage";
+import SignInPage from "src/pages/SignInPage";
+import NotificationsPage from "src/pages/NotificationsPage";
+import CheckInPage from "src/pages/CheckInPage";
 
 const styleSheet = StyleSheet.create({
   container: {

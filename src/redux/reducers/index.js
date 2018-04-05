@@ -1,8 +1,8 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from "redux";
 
-import { UPDATE_USER_GROUP } from '../actions';
+import { UPDATE_USER_GROUP } from "src/redux/actions";
 
-import { notificationData, userData } from "../../sampleData.js";
+import { notificationData, userData } from "src/sampleData";
 
 /* TODO: Will need to change this to use redux-saga or a similar library to handle API call */
 const group_reducer = (state = { group: null }, { type, group }) => {
