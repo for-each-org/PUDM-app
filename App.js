@@ -1,6 +1,10 @@
 import React from "react";
 import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import { StackNavigator } from "react-navigation";
+
+import reducers from "./src/redux/reducers";
 
 import HomePage from "./src/pages/HomePage";
 import SignInPage from "./src/pages/SignInPage";
@@ -87,8 +91,12 @@ const RootStack = StackNavigator(
   }
 );
 
+const store = createStore(reducers);
+
 const App = () => (
-  <RootStack />
+  <Provider store={store}>
+    <RootStack />
+  </Provider>
 );
 
 export default App;

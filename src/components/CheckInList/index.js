@@ -1,7 +1,8 @@
 import React from "react";
 import { View, Text, ScrollView, StyleSheet } from "react-native";
+import { connect } from "react-redux";
 
-import { userData } from "../../sampleData";
+import CheckInUserRow from './CheckInUserRow';
 
 const styleSheet = StyleSheet.create({
   listWrapper: {
@@ -10,10 +11,14 @@ const styleSheet = StyleSheet.create({
   },
 });
 
-const CheckInList = ({ styles }) => (
+const CheckInList = ({ styles, users }) => (
   <ScrollView style={[styleSheet.listWrapper, styles]}>
-    <Text>Implement Check-In List</Text>
+    {users.map((props, index) => <CheckInUserRow {...props} key={index} />)}
   </ScrollView>
 );
 
-export default CheckInList;
+const mapStateToProps = state => ({
+  users: state.users
+})
+
+export default connect(mapStateToProps)(CheckInList);
