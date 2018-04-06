@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-import { groupMapping } from "../../sampleData";
+import { groupMapping } from "src/sampleData";
 
 const styleSheet = StyleSheet.create({
   rowWrapper: {

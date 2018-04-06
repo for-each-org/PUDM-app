@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 
-import CheckInList from "../components/CheckInList";
+import CheckInList from "src/components/CheckInList";
 
 const styleSheet = StyleSheet.create({
   container: {

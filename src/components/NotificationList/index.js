@@ -1,7 +1,8 @@
 import React from "react";
 import { ScrollView, StyleSheet } from "react-native";
 import { connect } from "react-redux";
-import NotificationRow from "./NotificationRow";
+
+import NotificationRow from "src/components/NotificationList/NotificationRow";
 
 const styleSheet = StyleSheet.create({
   listWrapper: {

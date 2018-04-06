@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
-import { teamColors } from "../sampleData.js";
+import { teamColors } from "src/sampleData";
 
 const styleSheet = StyleSheet.create({
   container: {
