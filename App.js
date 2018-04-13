@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, View, Text, TouchableOpacity } from "react-native";
+import * as firebase from "firebase";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
 import { StackNavigator } from "react-navigation";
